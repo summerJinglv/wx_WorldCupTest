@@ -1,0 +1,70 @@
+/* pages/result/result.wxss */
+.container-result {
+  width: 100vm;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index:999
+}
+.bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -50%;
+  z-index: 2
+}
+.card-box{width:663rpx;height:931rpx;margin:66rpx auto 0;position: relative;text-align: center;z-index: 3}
+.card-bg{position:absolute;width:100%;top:0;left:0;}
+.name-tit{position: relative;margin-top:60rpx;z-index: 2}
+.name-tit0{width:152rpx;}
+.name-tit1{width:311rpx;}
+.name-tit2{width:312rpx;}
+.name-tit3{width:315rpx;}
+.name-tit4{width:316rpx;}
+.name-tit5{width:312rpx;}
+.res-score{position: relative;z-index: 2;font-size: 36rpx;font-weight: bold;color:#454545;margin-top: 20rpx;}
+.percent{color:#b90000}
+.notice{position: relative;z-index: 2;width:428rpx;color:#686868;margin: 90rpx auto 0;font-size: 26rpx;text-align: justify;}
+.notice-name{position: relative;z-index: 2;width:428rpx;text-align: right;color:#686868;margin: 10rpx auto 0;font-size: 26rpx;}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;position: relative;z-index: 2
+}
+.userinfo-avatar-box{
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 270rpx;
+  margin-bottom: 16rpx;
+  border-radius: 50%;
+  background: #e7e7e7;
+  overflow: hidden
+}
+.userinfo-avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.userinfo-nickname {
+  color: #454545;
+  font-size:28rpx;
+}
+.name{border-bottom: 1rpx solid #454545;margin:0 10rpx;}
+.btn-box{
+  margin:60rpx auto 0;
+  width:630rpx;
+  position: relative;
+  z-index: 3
+}
+
+.save-box{width: 297rpx;background: transparent;padding:0;float: left}
+.save-box image{width: 100%;}
+.share-box{width: 297rpx;background: transparent;padding:0;float: right}
+.share-box image{width: 100%;}
+.canvas-box{
+position: absolute;top:0;left: 10000rpx ;
+  width: 100%;
+  height: 100vh;background: #fff;z-index: 1}

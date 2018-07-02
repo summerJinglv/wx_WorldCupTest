@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/begin/begin",
+    "pages/test/test",
+    "pages/result/result",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "谁是伪球迷",
+    "navigationBarTextStyle": "black"
+  }
+}

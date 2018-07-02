@@ -1,0 +1,85 @@
+.container-b {
+  width: 100vm;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.pencil {
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  width: 263rpx;
+  height: 440rpx;
+  z-index: 2;
+}
+
+.eraser-box {
+  position: absolute;
+  bottom: 4%;
+  width: 289rpx;
+  left: 32%;
+  height: 209rpx;
+}
+
+.eraser-box .eraser {
+  width: 289rpx;
+  height: 209rpx;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  cursor: pointer;
+}
+
+.get-info-btn {
+  position: absolute;
+  bottom: 4%;
+  width: 289rpx;
+  left: 32%;
+  height: 209rpx;
+  background: transparent;
+  border: none;
+  z-index: 4;
+  outline: none;
+}
+
+.get-info-btn::after {
+  border: none;
+}
+
+.eraser:active {
+  opacity: 0.8;
+  position: relative;
+  top: 5rpx;
+}
+
+.nickname-box {
+  position: absolute;
+  top:722rpx;
+  left:310rpx;
+  transform: rotateZ(22deg);
+  z-index: 3;
+  color: #666;
+  word-break:break-all;
+  width:210rpx;
+  text-align:center;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ball {
+  position: absolute;
+  top: -300rpx;
+  right: -40%;
+  width: 578rpx;
+  height: 576rpx;
+}
+.btn_hover{background: transparent}
+ @media screen and (min-height: 700px) { 
+  .nickname-box {top:55%;left:330rpx;width:300rpx;}
+ } 

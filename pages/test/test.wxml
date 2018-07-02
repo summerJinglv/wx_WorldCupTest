@@ -1,0 +1,48 @@
+<view class="container-test">
+  <view>
+    <image class="bg" src="../../image/test_bg.jpg"></image>
+  </view>
+  <view class="score-box animated fadeIn">
+    <image class="score-bg" src="../../image/test_score.png" mode="widthFix"></image>
+    <view class="score-num">
+       <text class="me-score">{{meScore}}</text>
+      <text class="score-unit">:</text>
+      <text class="you-score">{{youScore}}</text>
+    </view>
+  </view>
+  <view>
+    <image class="ball animated fadeIn" animation="{{animationData}}"   src="../../image/test_ball.png" mode="widthFix"></image>
+    <image class="ball-fixed animated fadeIn" wx:if="{{show}}" src="../../image/test_ball_fixed.png" mode="widthFix"></image>
+  </view>
+  <view class="boad-box" wx:if="{{show}}">
+    <view class="boad-t">
+      <view class="ani-tL spaceInLeft">
+        <image class="titL " src="../../image/test_titL.png" mode="widthFix"></image>
+        <text class="num">{{orderNum}}</text>
+      </view>
+      <view class="ani-tR tinLeftIn">
+       <text class="title">{{question}}</text>
+        <image class="titR" src="../../image/test_titR.png" mode="widthFix"></image>
+       
+      </view>
+    </view>
+    <view class="boad-m">
+      <view class="ani-b1 spaceInDown">
+         <view class="boad-1 ">
+        <image src="../../image/boad_01.png" mode="widthFix"></image>
+      </view>
+      <view class="boad-2 ">
+        <image src="../../image/boad_02.png" mode="widthFix"></image>
+        <text class="sel sel-A " bindtap='choose' data-isRight="{{answer.A.isRight}}">A {{answer.A.text}}</text>
+        <text class="sel sel-B" bindtap='choose' data-isRight="{{answer.B.isRight}}">B {{answer.B.text}}</text>
+      </view>
+      <view class="boad-3 ">
+        <image src="../../image/boad_03.png" mode="widthFix"></image>
+        <text class="sel sel-C" bindtap='choose' data-isRight="{{answer.C.isRight}}">C {{answer.C.text}}</text>
+        <text class="sel sel-D" bindtap='choose' data-isRight="{{answer.D.isRight}}">D {{answer.D.text}}</text>
+      </view>
+      </view>
+     
+    </view>
+  </view>
+</view>

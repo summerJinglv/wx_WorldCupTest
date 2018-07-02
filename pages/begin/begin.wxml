@@ -1,0 +1,23 @@
+<view class="container-b" >
+  <view class="nickname-box">
+    <text class="nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view>
+      <image  class="bg" src="../../image/begin_bg.jpg" background-size="cover"></image>
+  </view>
+   <view>
+      <image  class="ball" src="../../image/begin_ball.png" background-size="cover"></image>
+  </view>
+  <view>
+      <image class="pencil animated fadeInUp" src="../../image/begin_pencil.png" background-size="cover"></image>
+  </view>
+   <view class="eraser-box"  bindtap='beginTest' wx:if="{{!hasUserInfo && canIUse}}">
+      <image class="eraser animated bounceInLeft" src="../../image/begin_name.png" background-size="cover"></image>
+  </view>
+  <view class="eraser-box"  bindtap='beginTest' wx:else>
+      <image class="eraser animated fadeIn" src="../../image/begin_eraser.png" background-size="cover"></image>
+  </view>
+  <button class="get-info-btn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" hover-class='btn_hover'></button>
+ 
+</view>
+
